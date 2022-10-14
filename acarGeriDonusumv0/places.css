@@ -1,0 +1,549 @@
+/* Depolarımız */
+/* google fonts -> Roboto + Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgba(66, 86, 108, 0.4);
+}
+
+.container .navbar{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(39, 76, 108);
+    border-width: 3px 0 3px 0; 
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.navbar .logo img{
+    max-width: 180px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar img:hover{
+    transform: scale(0.9);
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px; 
+    line-height: 100px; 
+}
+
+.navbar ul li a{
+    color:  rgb(48, 109, 163);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;   
+    font-family: Roboto;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: rgba(66, 86, 108, 0.4);
+    border-radius: 25px;
+}
+
+/* PLACES (ANA DEPO) */
+.main{
+    margin-bottom: 150px;
+}
+
+.main-title{
+    margin: 60px 0;
+}
+
+.main-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(48, 109, 163);
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.main-title h2::after{
+    content: "";
+    width: 110px;
+    height: 4px;
+    background-color: rgb(48, 109, 163);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.main-img{
+    width: 45%;    
+}
+
+.main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-text{
+    width: 40%;
+}
+
+.main-text i{
+    font-size: 30px;
+    color: rgb(48, 109, 163);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-text p{
+    font-size: 23px;
+    text-align: center;
+    align-items: center;
+    color: rgb(39, 76, 108);
+    font-family: Poppins;
+    font-weight: bold;   
+    top: 0;
+}
+
+/* PLACES (2 NO'LU DEPO) */
+.second{
+    margin-bottom: 150px;
+    background-color: white;
+}
+
+.second-title{
+    margin: 60px 0;
+}
+
+.second-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(48, 109, 163);
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.second-title h2::after{
+    content: "";
+    width: 160px;
+    height: 4px;
+    background-color: rgb(48, 109, 163);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.second-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.second-img{
+    width: 45%;  
+}
+
+.second-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-text{
+    width: 40%;
+}
+
+.second-text p{
+    font-size: 23px;
+    text-align: center;
+    color: rgb(39, 76, 108);
+    font-family: Poppins;
+    font-weight: bold;   
+    top: 0;
+}
+
+.second-text i{
+    font-size: 30px;
+    margin-top: 28px;
+    color: rgb(48, 109, 163);
+    justify-content: center;
+    display: flex;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgba(66, 86, 108, 0.4);
+    padding: 10px 0;
+}
+
+.container .footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-item{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-basis: 65%; 
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.footer-item .logo{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.footer-item .logo img{
+    max-width: 250px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo img:hover{
+    transform: scale(0.9);
+}
+
+.footer-item .about p{
+    padding: 40px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 17px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(39, 76, 108);
+}
+
+.about a{
+    margin: 40px;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(39, 76, 108);
+    cursor: pointer ;
+}
+
+.item-title{
+    margin: 30px 0;
+}
+
+.item-title h3{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(39, 76, 108);
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: 25px;
+}
+
+.item-title h3::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: rgb(39, 76, 108);
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.item-content{
+    text-align: center;
+}
+
+.item-content a{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(39, 76, 108);
+}
+
+.footer-icons p{
+    color: rgb(39, 76, 108);
+    font-size: 17px;
+    font-family: Poppins;
+    font-weight: bold;
+    
+}
+
+.footer-icons ul{  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.footer-icons li{
+    display: inline-block;
+    margin: 4px;
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.footer-icons li a i{
+    color: rgba(66, 86, 108);
+    font-size: 35px;
+    transition: all ease-in-out 250ms; 
+}
+
+.footer-icons li a:hover i{
+    color: rgb(48, 109, 163);
+}
+
+.map p{
+    color: rgb(39, 76, 108);
+    font-size: 17px;
+    font-family: Poppins;
+     font-weight: bold;
+}
+
+.map iframe{
+    width: 110%;
+    height: 230px;
+    border: none;
+}
+
+.copyright li{ 
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(39, 76, 108);
+    padding: 3px 7px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* RESPONSIVE */
+#menu-icon{
+    font-size: 33px;
+    color: rgb(39, 76, 108);
+    display: none; 
+    float: right;
+    padding: 30px 30px;
+    margin-left: 20px;
+}
+
+/* Navbar */
+@media only screen and (max-width:1100px){
+    .navbar ul{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+        border: solid rgb(39, 76, 108);
+        border-width: 0 0 3px 0;
+        z-index: 8;
+    }
+    .navbar ul li{
+        height: 50px;
+        vertical-align: top;
+        line-height: 3;
+    }
+    .navbar ul li a{
+        color: rgb(39, 76, 108);
+        font-weight: bold;
+        line-height: 10px;
+    }
+    .navbar #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:750px){
+    header .navbar .logo{
+        margin-left: 28px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    #menu-icon{
+        font-size: 30px;
+    }
+    .navbar .logo img{
+        width: 160px;
+    }
+    .navbar .logo{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .navbar ul li{
+        padding: 0px 0px;
+    }
+    .navbar ul li a{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+/* Depolar - main */
+@media only screen and (max-width:1100px){
+    .main-content{
+        flex-wrap: wrap;
+    }
+    .main-img{
+        width: 100%;
+    }
+    .main-text{
+        width: 100%;
+        margin-top: 5%;    
+    }
+}
+
+@media only screen and (max-width:500px){
+    .main-title h2{
+        font-size: 30px;
+    }
+    .main-content .main-text i{
+        font-size: 25px;
+    }
+    .main-content .main-text p{
+        font-size: 18px;
+    }
+}
+
+/* Depolar - second */
+@media only screen and (max-width:1100px){
+    .second-content{
+        flex-wrap: wrap;
+    }
+    .second-img{
+        width: 100%;
+    }
+    .second-text{
+        width: 100%;
+        margin-top: 2%; 
+        margin-bottom: 10px;   
+    }
+}
+
+@media only screen and (max-width:500px){
+    .second-title h2{
+        font-size: 30px;
+    }
+    .second-content .second-text i{
+        font-size: 25px;
+    }
+    .second-content .second-text p{
+        font-size: 18px;
+    }
+}
+
+/* Footer */
+@media only screen and (max-width:1100px){
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .footer-item .logo img,
+    .footer-item .about p,
+    .fooer-item .about a,
+    .footer-item .item-title,
+    .footer-item .map iframe{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer-item .about p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .footer-item .about a{
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 19px;
+    }
+    .footer-item .item-title h3{
+        font-size: 30px;
+    }
+    .footer-item .item-content a,
+    .footer-item .footer-icons p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer-icons li a i{
+        font-size: 45px;
+    }
+    .footer-item .map p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer-item .map iframe{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .footer-item .about p,
+    .footer-item .about a{
+        font-size: 17px;
+        margin-top: 1px;
+    }
+    .footer-item .item-title h3{
+        font-size: 25px;
+    }
+    .footer-item .item-content a,
+    .footer-item .footer-icons p{
+        font-size: 17px;
+        text-align: center;
+    }
+    .footer-icons li a i{
+        font-size: 40px;
+    }
+    .footer-item .map p{
+        font-size: 17px;
+    }
+    .copyright li{
+        font-size: 13px;
+        color: rgb(39, 76, 108);
+        font-weight: bold;
+    }
+}

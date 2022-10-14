@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--İletişim-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acar Geri Dönüşüm | Demir, Çelik Ürünleri Pazarlama!">
+    <meta name="keywords" content="">
+    <meta name="author" content="Semanur Bilada">
+
+    <title>ACAR | İletişim</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- scrollreveal library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome ikonlar-->
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">     
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="images/logo.jpg"></a>
+                </div>
+    
+                <ul id="menuItems">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="places.html">Depolarımız</a></li> 
+                    <li><a href="products.html">Ürünlerimiz</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle();"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="contact">
+        <div class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone-flip"></i> <br>
+                        <div class="callme">
+                            <a href="https://api.whatsapp.com/send?phone=905326861593" target="_blank">WhatsApp için tıklayınız!</a><br> <br>
+                            <a href="tel:(0262) 658 13 60">Ofis: (0262) 658 13 60</a>
+                        </div>
+                    </div>
+                    <!--    
+                    <div class="contact-item">
+                        <i class="fa-solid fa-user"></i> <br>
+                        <p>Murtaza Bilada</p> <br>
+                        <p>Selahattin Bilada</p> <br> <br>
+                    </div> -->
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i> <br>
+                        <address>
+                            <a href="mailto:info@acargeridonusum.com.tr">info@acargeridonusum.com.tr</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="social">
+                    <br><p>Sosyal medyadan bizi takip edin: </p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ACAR-Geri-Dönüşüm-Ve-Metal-Ürn-San-Tic-Ltd-Şti-780224742056349/?fref=nf/" target="_blank" ><i class="fab fa-facebook"></i></a></li> <!--Facebook-->
+                        <li><a href="https://www.instagram.com/acar_geri_donusum/" target="_blank" ><i class="fab fa-instagram"></i></a></li> <br> <br> <!--İnstagram-->
+                    </ul>
+                </div>
+
+                <div class="reach">
+                    <p>Adresimize ulaşmak için:</p>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12071.968645193067!2d29.374946569775386!3d40.85009590000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13069380d865dea4!2zQWNhciBHZXJpIETDtm7DvMWfw7xt!5e0!3m2!1str!2str!4v1660143635103!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+                <ul class="copyright">
+                    <li>Copyright © 2022 | Acar Geri Dönüşüm Ltd Şti</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--JAVASCRIPT-->
+    <!-- navbar menu - responsive -->
+    <script>
+        var menuItems=document.getElementById('menuItems');
+        menuItems.style.maxHeight="0px";
+
+        function menuToggle(){
+            if(menuItems.style.maxHeight=="0px"){
+                menuItems.style.maxHeight="300px";
+            }
+            else{
+                menuItems.style.maxHeight="0px"; 
+            }
+        }
+    </script>    
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Hakkımızda-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acar Geri Dönüşüm | Demir, Çelik Ürünleri Pazarlama!">
+    <meta name="keywords" content="">
+    <meta name="author" content="Semanur Bilada">
+
+    <title>ACAR | Hakkımızda</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- scrollreveal library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome ikonlar-->
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="images/logo.jpg"></a>
+                </div>
+    
+                <ul id="menuItems">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="places.html">Depolarımız</a></li> 
+                    <li><a href="products.html">Ürünlerimiz</a></li>
+                    <li><a href="about.html" class="active">Hakkımızda</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle();"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <di class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-item">
+                        <h3>40 Yılı aşkın tecrübemizle!</h3>
+                        <p>Demir, Çelik ve Metal ürünleri ticareti yaparak sektöre katkıda bulunuyoruz.</p>
+                        <p>1965 yılında babalarımızın başlatmış olduğu bu alanda, 2014 yılından itibaren Acar Geri Dönüşüm olarak devam ediyoruz.</p>
+                        <p>Sektöre katkıda bulunmak açısından; bu zamana kadar edindiğimiz, babadan oğula geçen tecrübelerimizi kullanıyoruz.</p>
+                    </div>
+
+                    <div class="about-item">
+                        <p>Demir, çelik, metal, sac ve profil gibi ürünleri farklı birçok sanayi kolundan temin edip yurt içi ve yurt dışı ticaretini yapıyoruz.</p>
+                        <p>Ticaretini yaptığımız ürünlerimiz çoğunlukla ağır sanayi mamulleri olup, 1 ve 2.kalite malzeme tedariği yapmaktayız.</p>
+                        <p>Hem ihracat, hem de ithalat yaparak firma çizgimizi bozmadan yolumuzda ilerlemeye çalışıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </di>
+    </section>
+
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="social">
+                    <br><p>Sosyal medyadan bizi takip edin:   </p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ACAR-Geri-Dönüşüm-Ve-Metal-Ürn-San-Tic-Ltd-Şti-780224742056349/?fref=nf/" target="_blank" ><i class="fab fa-facebook"></i></a></li> <!--Facebook-->
+                        <li><a href="https://www.instagram.com/acar_geri_donusum/" target="_blank" ><i class="fab fa-instagram"></i></a></li> <br> <br> <!--İnstagram-->
+                    </ul>
+                </div>
+
+                <div class="reach">
+                    <p>Adresimize ulaşmak için:</p>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12071.968645193067!2d29.374946569775386!3d40.85009590000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13069380d865dea4!2zQWNhciBHZXJpIETDtm7DvMWfw7xt!5e0!3m2!1str!2str!4v1660143635103!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+                <ul class="copyright">
+                    <li>Copyright © 2022 | Acar Geri Dönüşüm Ltd Şti</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  
+
+    <!--JAVASCRIPT-->
+    <!-- navbar menu - responsive -->
+    <script>
+        var menuItems=document.getElementById('menuItems');
+        menuItems.style.maxHeight="0px";
+
+        function menuToggle(){
+            if(menuItems.style.maxHeight=="0px"){
+                menuItems.style.maxHeight="400px";
+            }
+            else{
+                menuItems.style.maxHeight="0px"; 
+            }
+        }
+    </script>   
+
+</body>
+</html>

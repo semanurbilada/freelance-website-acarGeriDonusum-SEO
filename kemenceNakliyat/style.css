@@ -1,0 +1,563 @@
+/* google fonts; Roboto - Poppins - Qwitcher Grypen - Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;    
+}
+
+header .container{
+    background: url(images/background.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* NAVBAR */
+.container nav{
+    width: 100%;
+    height: 110px;
+    background-color: rgba(66, 86, 108, 0.4);
+}
+
+nav .logo{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 14px;
+}
+
+.logo ul a{
+    text-decoration: none; 
+    font-size: 70px; 
+    font-family: Qwitcher Grypen; 
+    font-weight: bold; 
+    color: white; 
+    cursor: pointer; 
+    transition: 0.5s;
+}
+
+.logo ul a:hover{
+    transform: scale(0.9);
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    line-height: 100px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background-color: rgb(115, 120, 124);
+    border-radius: 10px;
+}
+
+/* ANASAYFA */
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.center .center-title h1{
+    color: white;
+    font-size: 55px;
+    width: 900px;
+}
+
+.center-title h2{
+    color: white;
+    font-size: 40px;
+    width: 900px;
+    margin-top: 10px;
+}
+
+.center .button{
+    margin: 35px 280px;
+    margin-top: 20px;
+}
+
+.button button{
+    height: 50px;
+    width: 150px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(66, 86, 108, 0.4);
+    border: solid rgb(115, 120, 124);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button button:hover{
+    background-color: rgba(115, 120, 124);
+}
+
+/* HİZMETLERİMİZ */
+.services{
+    margin-bottom: 170px;
+    margin-top: 8%;
+}
+
+.services-title{
+    margin-top: 60px 0;
+}
+
+.services-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(115, 120, 124);
+    font-weight: 800;
+    font-family: Poppins;
+    font-size: 35px;
+}
+
+.services-title h2::after{
+    content: "";
+    width: 150px;
+    height: 4px;
+    background-color: rgb(115, 120, 124);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.services-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.services-img{
+    width: 40%;
+    margin-top: 5%;
+}
+
+.services-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-text{
+    width: 40%;
+    text-align: center;
+    color: rgb(57, 61, 64);
+}
+
+.services-text h3{
+    margin-bottom: 27px;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.services-text p{
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+/* PORTFOLIO */
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+
+.portfolio-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(115, 120, 124);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.6;
+    color: white;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.portfolio-item:hover .overlay{
+    top: 0;
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.1);
+}
+
+/* FOOTER (Hakkımızda + İletişim) */
+.contact{
+    margin-top: 5%;
+    padding: 10px 0;
+    background-color: rgba(66, 86, 108, 0.4);
+}
+
+.container .about{
+    text-align: center;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.about h3{
+    margin-top: 5%;
+    font-size: 65px;
+    font-family: Qwitcher Grypen;
+    color: rgb(57, 61, 64);
+}
+
+.about p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(57, 61, 64);
+}
+
+.container .contact-content{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(57, 61, 64);
+}
+
+.contact-item .callme{
+    text-align: center;
+}
+
+.callme a{
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(115, 120, 124);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.contact-item p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    color: rgb(115, 120, 124);
+    font-family: Poppins;
+}
+
+.contact-item address{
+    font-size: 20px;
+    line-height: 33px;
+}
+
+address a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Poppins;
+    color: rgb(115, 120, 124);
+    font-weight: bold;
+}
+
+ul{ 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-item li{
+    display: inline-block;
+    margin: 4px;
+    list-style: none;
+    margin-top: 5%;
+}
+
+.contact-item li a i{
+    color: rgb(115, 120, 124);
+    font-size: 60px;
+    transition: all ease-in-out 250ms; 
+}
+
+.contact-item li a:hover i{
+    color: rgb(115, 120, 124);
+}
+
+.copyright li{
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(57, 61, 64);
+    padding: 3px 7px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* RESPONSIVE */
+#menu-icon{
+    color: white;
+    display: none;
+    font-size: 35px;
+    float: right;
+    padding: 30px 30px;
+    margin-left: 20px;
+}
+
+/* Anasayfa + Navbar */
+@media only screen and (max-width:1100px){
+    .home .center h1,
+    .home .center h2,
+    .home .center .button{
+        position: relative;
+        top: 150px;                 
+    }
+    nav #menuItems{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: rgba(66, 86, 108, 0.4);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+        z-index: 8;                        
+    }
+    nav #menuItems li{
+        height: 50px;
+        vertical-align: top;
+        line-height: 3; 
+    }
+    nav #menuItems li a{
+        font-weight: bold;
+    }
+    nav #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .home nav .logo{
+        margin-left: 28px;
+        margin-top: 10px;
+    }
+    .home .center h1{
+        font-size: 40px;
+    }
+    .home .center h2{
+        font-size: 30px;
+    }
+    .home .center .button button{
+        width: 130px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .home nav .logo{
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .home nav ul li a{
+        font-size: 17px;
+    }
+    .home .center h1{
+        font-size: 35px;
+    }
+    .home .center h2{
+        font-size: 25px;
+    }
+    .home .center .button button{
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .home nav .logo{
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .home nav .logo ul a{
+        font-size: 60px;
+    }
+    nav #menu-icon{
+        font-size: 30px;
+        margin-top: 7px;
+    }
+    .home .center h1,
+    .home .center h2,
+    .home .center .button{
+        position: relative;
+        top: 130px;                 
+    }
+    .home .center h1{
+        font-size: 30px;
+    }
+    .home .center h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .home nav .logo{
+        margin-top: 23px;
+        margin-left: 15px;
+    }
+    .home nav .logo ul a{
+        font-size: 50px;
+    }
+    nav #manu-icon{
+        font-size: 20px;
+    }
+}
+
+/* Hizmetlerimiz */
+@media only screen and (max-width:1100px){
+    .services-img{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .services-text{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .services-title h2{
+        font-size: 30px;
+    }
+    .services-title h2::after{
+        width: 120px;
+        height: 4px;
+    }
+    .services-text h3{
+        font-size: 30px;
+    }
+    .services-text p{
+        font-size: 18px;
+    }
+}
+
+/* Portfolio */
+@media only screen and (max-width:990px){
+    .portfolio{
+        margin-bottom: 12%;
+    }
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+/* Footer */
+@media only screen and (max-width:850px){
+    .contact-content{
+        flex-wrap: wrap;
+    }
+    .footer .about,
+    .footer .contact-item i,
+    .footer .contact-item .callme a,
+    .footer .contact-item p,
+    .footer .contact-item address a{
+        width: 80%;
+    }
+}
+
+@media  only screen and (max-width:650px){
+    .contact .contact-content{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .contact .about h3{
+        font-size: 65px;
+    }
+    .contact .about p{
+        font-size: 18px;
+    }
+    .contact-item i{
+        font-size: 25px;
+    }
+    .contact-item .callme a,
+    .contact-item p,
+    .contact-item address a{
+        font-size: 18px;
+    }
+    .copyright li{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

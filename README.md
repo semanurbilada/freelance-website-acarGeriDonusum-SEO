@@ -1,1 +1,3 @@
 The remote website is up and here is the link https://acargeridonusum.com.tr
+
+Kemence Nakliyat website isn't up, for now...

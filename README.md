@@ -1,3 +1,3 @@
-The remote website is up and here is the link https://acargeridonusum.com.tr (version 0)
+- The remote website is up and here is the link https://acargeridonusum.com.tr
 
-Kemence Nakliyat website isn't up, for now...
+- Kemence Nakliyat website is up and here is the link https://kemencehurda.com.tr
